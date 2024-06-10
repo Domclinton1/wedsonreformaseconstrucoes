@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedson Reforma e Conservação em Geral</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header class="menuPai">
+        <div class="logo" >
+            <img src="./assets/icons/logo.png" alt="" >
+        </div>
+        <div class="menuHamburguer" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav class="menuFilho" id="menuFilho">
+            <ul class="menuLista">
+                <li onclick="inicio()">Inicio</li>
+                <li onclick="sobre()">Sobre</li>
+                <li onclick="services()">Serviços</li>
+                <li onclick="fotos()">Fotos</li>
+                <li onclick="localiza()">Localização</li>
+                <li onclick="contato()">Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="hero">
+            <div class="logoHero" data-aos="zoom-in-up" data-aos-duration="2000">
+                <img src="./assets/icons/logo.png" alt="">
+            </div>
+            <button class="order" onclick="order()"><i class="fa-brands fa-whatsapp "></i>Agendar Orçamento!</button>
+            <div class="heroText">
+                <h1 data-aos="fade-down" data-aos-duration="1000">Construindo com Excelência, Reformando com Paixão!</h1>
+                <p data-aos="fade-up" data-aos-duration="1500"><strong>Deixe-nos transformar seu sonho em realidade. Solicite um orçamento gratuito hoje mesmo!</strong></p>
+            </div>
+
+        </div>
+        <div class="sobre" id="sobre">
+            
+            <div class="textoSobre">
+                <h1>Sobre Nós</h1>
+                <p>
+                    Com mais de 8 anos de experiência no mercado, nossa empresa de serviços de pedreiro se dedica a transformar sonhos em realidade através de construções e reformas de alta qualidade. Atendemos clientes com profissionalismo e atenção aos detalhes, garantindo resultados duradouros e esteticamente agradáveis.
+                    <br>
+                    Nosso compromisso é com a excelência em cada projeto, desde pequenas reformas residenciais até grandes obras comerciais. Utilizamos materiais de alta qualidade e técnicas modernas para assegurar a satisfação de nossos clientes, sempre respeitando prazos e orçamentos.
+                    <br>
+                    Acreditamos que cada projeto é único e merece uma abordagem personalizada. Nossa equipe de profissionais qualificados está pronta para ouvir suas necessidades e oferecer soluções sob medida, tornando seu espaço mais funcional e bonito. Confie na nossa expertise e dedicação para realizar seu próximo projeto de construção ou reforma.
+                </p>
+            </div>
+            <div class="sobreimg">
+                <img src="./assets/icons/capacete.png"/>
+            </div>
+
+        </div>
+        <div class="services" id="services">
+            <h2>Nossos Serviços</h2>
+            <p>Com uma equipe experiente e dedicada, oferecemos uma ampla gama de serviços de alvenaria para atender às suas necessidades de construção e reforma. Nossa missão é fornecer soluções de alta qualidade, garantindo que cada projeto seja concluído com precisão e no prazo.</p>
+            <div class="grid-service">
+                <div class="service">
+                    <div class="serviceImg">
+                        <img src="./assets/images/parede.jpg" alt="">
+                    </div>
+                    <div class="serviceInfo">
+                        <h2>Construção de Casas</h2>
+                    <button class="saibaMais openModal" data-modal-id="modal1">Saiba Mais</button>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modalContent">
+                            <span class="close">&times;</span>
+                            <div class="modalText">
+                                <h2>Construção de Casas</h2>
+                                <p>
+                                    Realizamos a construção completa de residências, desde a fundação até o acabamento final. Nosso foco é criar espaços duradouros e confortáveis que atendam às suas expectativas e estilo de vida.
+                                </p>
+                               
+                            </div>
+                            <div class="modalSlider">
+                                <div class="modalSlides">
+                                    <div class="modalSlide active">
+                                        <img src="./assets/images/fotos/casa-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/casa-9.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/predios.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/casa-3.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/casa-5.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/casa-6.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                <div class="service">
+                    <div class="serviceImg">
+                        <img src="./assets/images/reformas.jpg" alt="">
+                    </div>
+                    <div class="serviceInfo">
+                        <h2>Reformas e Ampliações</h2>
+                    <button class="saibaMais openModal" data-modal-id="modal2">Saiba Mais</button>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div  class="modalContent">
+                            <span class="close">&times;</span>
+                            <div class="modalText">
+                                <p>
+                                    Transformamos e ampliamos espaços existentes para melhor atender às suas necessidades. Sejam pequenas reformas ou grandes ampliações, garantimos resultados que combinam funcionalidade e estética.
+                                </p>
+                            </div>
+                            <div class="modalSlider">
+                                <div class="modalSlides">
+                                    <div class="modalSlide active">
+                                        <img src="./assets/images/fotos/reforma-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/reparo-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/construção-6.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/cozinha-1.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="service">
+                    <div class="serviceImg">
+                        <img src="./assets/images/revestimento.jpg" alt="">
+                    </div>
+                    <div class="serviceInfo">
+                        <h2>Revestimento e Acabamentos</h2>
+                        <button class="saibaMais openModal" data-modal-id="modal3">Saiba Mais</button>
+                    </div>
+                    <div id="modal3" class="modal">
+                        <div class="modalContent">
+                            <span class="close">&times;</span>
+                            <div class="modalText">
+                                <p>
+                                    Aplicamos revestimentos e acabamentos de alta qualidade em pisos, paredes e tetos, utilizando materiais diversos como cerâmica, porcelanato e pedras naturais. Nosso objetivo é entregar um acabamento impecável que valorize seu ambiente.
+                                </p>
+                                
+                            </div>
+                            <div class="modalSlider">
+                                <div class="modalSlides">
+                                    <div class="modalSlide active">
+                                        <img src="./assets/images/fotos/acabamentos-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/acabamentos-2.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/acabamentos-3.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/acabamentos-8.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/acabamentos-11.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/acabamentos-6.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="service">
+                    <div class="serviceImg">
+                        <img src="./assets/images/assentamentos.jpg" alt="">
+                    </div>
+                   <div class="serviceInfo">
+                    <h2>Assentamento de Pisos e Azulejos</h2>
+                    <button class="saibaMais openModal" data-modal-id="modal4">Saiba Mais</button>
+                   </div>
+                    <div id="modal4" class="modal">
+                        <div class="modalContent">
+                            <span class="close">&times;</span>
+                            <div class="modalText">
+                                <p>
+                                    Instalamos pisos e azulejos com precisão e cuidado, assegurando um resultado duradouro e esteticamente agradável. Seja para áreas internas ou externas, nosso trabalho é feito com atenção aos mínimos detalhes.
+                                </p>
+                                
+                               
+                            </div>
+                            <div class="modalSlider">
+                                <div class="modalSlides">
+                                    <div class="modalSlide active">
+                                        <img src="./assets/images/fotos/azulejo-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejo-2.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejos-3.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejo-4.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejo-5.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejo-6.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejos-5.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button> 
+                            </div>
+                        </div>
+                    </div>
+                   
+            
+                </div>
+                <div class="service">
+                    <div class="serviceImg">
+                        <img src="./assets/images/reparo.jpg" alt="">
+                    </div>
+                    <div class="serviceInfo">
+                        <h2>Reparos Estruturais</h2>
+                    <button data-modal-id="modal5" class="saibaMais openModal">Saiba Mais</button>
+                    </div>
+                    <div id="modal5" class="modal">
+                        <div class="modalContent">
+                            <span class="close">&times;</span>
+                            <div class="modalText">
+                                <p>
+                                    Realizamos reparos estruturais em alvenaria, concreto e fundações, garantindo a segurança e a integridade do seu imóvel. Nosso conhecimento técnico permite identificar e corrigir problemas de forma eficiente e eficaz.
+                                </p>
+                                
+                            </div>
+                            <div class="modalSlider">
+                                <div class="modalSlides">
+                                    <div class="modalSlide active">
+                                        <img src="./assets/images/fotos/reparo-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/telhado-13.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/telhado-14.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/estrutura-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/estrutura-2.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/estrutura-5.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="service">
+                    <div class="serviceImg">
+                        <img src="./assets/images/outros.jpeg" alt="">
+                    </div>
+                    <div class="serviceInfo">
+                        <h2>Outros Serviços:</h2>
+                    <button class="saibaMais openModal" data-modal-id="modal6">Saiba Mais</button>
+                    </div>
+                    <div id="modal6" class="modal">
+                        <div class="modalContent">
+                            <span class="close">&times;</span>
+                            <div class="modalText">
+                                
+                                <ul>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;"></i>Pintura</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;"></i>Elétrica</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;"></i>Telhados</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;"></i>Hidráulica</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;"></i>Acabamentos</li>
+                                </ul>
+
+                                
+                            </div>
+                            <div class="modalSlider">
+                                <div class="modalSlides">
+                                    <div class="modalSlide active" >
+                                        <img src="./assets/images/fotos/telhado-7.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/escada-9.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/escada-10.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/escada-5.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/escada-6.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/cozinha-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/piso-1.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/banheiro-3.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/azulejo-5.jpeg" alt="">
+                                    </div>
+                                    <div class="modalSlide">
+                                        <img src="./assets/images/fotos/acabamentos-4.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x"></i>Agendar orçamento!</button>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p>
+                Cada serviço é executado com profissionalismo e atenção aos detalhes, utilizando materiais de alta qualidade e técnicas modernas. Entre em contato conosco para discutir seu próximo projeto e descubra como podemos ajudá-lo a transformar seus espaços.
+            </p>
+        </div>
+        <div class="fotos" id="foto">
+            <h1>Fotos</h1>
+            <div class="slider">
+                <div class="slides" id="slides">
+                    <div class="slide active">
+                        <img src="./assets/images/fotos/acabamentos-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-6.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-7.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-8.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-9.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-11" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-10.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-12.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/acabamentos-13.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/azulejo-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/azulejo-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/azulejo-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/azulejo-6.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/azulejos-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/azulejos-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-6.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-7.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheiro-8.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-10.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-8.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-9.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-7.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/casa-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/construção-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/construção-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/construção-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/construção-6.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/construção-7.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/construção-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/cozinha-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/cozinha-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/cozinha-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-6.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-9.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/escada-10.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/predios-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/predios.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-7.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/quarto-8.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/reforma-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/sala-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/sala-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/sala-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/sala-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-1.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-2.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-4.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-5.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-20.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-6.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-7.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-8.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-9.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-10.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-12.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-13.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-14.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-16.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-18.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-21.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-22.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-23.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-24.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-26.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/telhado-25.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/fotos/banheirinho.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                    <button id="nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="location" id="local">
+            <h1>Localização</h1>
+            <p>Nós estamos localizados no endereço: <br>
+                <strong onclick="localize()" style="color: gold; cursor: pointer;">Av. Virgílio de Melo Franco, 479 - Santa Amelia, Belo Horizonte - MG, 31555-120.</strong>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.9206979888836!2d-43.98212839999999!3d-19.8433081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691b5297bfff3%3A0xc0e50836aebfc1d1!2sAv.%20Virg%C3%ADlio%20de%20Melo%20Franco%2C%20479%20-%20Santa%20Amelia%2C%20Belo%20Horizonte%20-%20MG%2C%2031555-120!5e0!3m2!1spt-BR!2sbr!4v1717170452398!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contato" id="contato">
+            <h1>Contato</h1>
+            <p>Entre em contato agora mesmo!</p>
+            <ul>
+                <li><i class="fa fa-envelope"></i>Email</li>
+                <li> <i class="fa-brands fa-whatsapp"></i>WhatsApp</li>
+                <li><i class="fa fa-phone"></i>Telefone</li>
+                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+            </ul>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p><strong>&copy; 2024 Wedson Reformas e Construção em Geral</strong></p>
+        <p>CNPJ: 32.445.339/0001-98</p>
+        <p>Todos os direitos reservados.</p>
+        
+        <em onclick="dev()">&copy; Developed by Dom Link Soluções Digitais.</em>
+        <a onclick="wpp1()" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+            <img onclick="order()" src="./assets/icons/whatssapp.svg" alt="Botão whatsapp">
+            <span class="tooltip-text">Agende seu orçamento.</span>
+        </a>
+    </footer>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html> 

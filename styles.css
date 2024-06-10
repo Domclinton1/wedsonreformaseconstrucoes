@@ -1,0 +1,747 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    color: whitesmoke;
+    text-shadow: 10px 0 10px black;;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #1e252b;
+}
+.menuHamburguer {
+    display: none;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+menuHamburguer {
+    display: none;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menuPai {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e252b;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 2;
+    transition: top 0.3s;
+    position: fixed;
+}
+
+.logo img {
+    width: 70px;
+    margin-left: 60px;
+    animation: zoomImage 2s infinite;
+}
+
+@keyframes zoomImage {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.menuFilho {
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    z-index: 1;
+}
+
+.menuLista {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+    align-items: center;
+    margin: 30px;    
+    cursor: pointer;
+}
+
+.menuLista li:hover {
+    color: gold;
+    transition: 0.5s;
+}
+
+.menuLista li:last-child {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menuLista li:last-child:hover {
+    border: 2px solid gold;
+    transition: 1s;
+}
+
+.order {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(52, 134, 52);
+    font-size: 20px;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    animation: zoomImage 4s infinite;
+}
+
+.order:hover {
+    border: 1px solid gold;
+    transition: 0.5s;
+    color: gold;
+}
+
+.hero {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+    gap: 1.3rem;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1),  #1e252b), url(./assets/images/um-homem-de-capacete-olha-para-uma-planta-e-as-palavras-construcao-nela-ia-generativa-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.logoHero img {
+    width: 70%;
+    margin: 0 auto;
+    animation: zoomImage 3s infinite;
+}
+
+.heroText {
+    width: 50%;
+}
+
+.heroText h1 {
+    text-shadow: 15px 0 15px black;
+}
+.heroText p {
+    text-shadow: 15px 0 15px black;
+}
+.sobre {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 2;
+}
+.sobre p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+.sobreimg img {
+    animation: move 4s infinite;
+}
+@keyframes move {
+    0% {
+        transform: translatey(0);
+       
+    }
+    50% {
+        transform: translatey(100px);
+        
+    }
+    100% {
+        transform: translatey(0);
+        
+    }
+}
+
+.services {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    text-align: center;
+}
+.services p {
+    width: 75%;
+    font-weight: 500;
+}
+.service {
+    width: 300px;
+    background-color: rgba(245, 245, 245, 0.938);
+    border-radius: 10px;
+    box-shadow: 10px 0 18px  #ffffff;
+}
+.service h2 {
+    font-size: 20px;
+    color: black;
+}
+.grid-service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    padding: 20px;
+}
+.serviceImg {
+    width: 250px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.serviceImg img {
+    width: 250px;
+    height: 198px;
+    border-radius: 10px;
+    
+}
+.serviceImg img:hover {
+    box-shadow: 10px 0 10px rgb(52, 134, 52);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.serviceInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.service:nth-child(4) h2{
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 6px ;
+}
+.saibaMais {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(52, 134, 52);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+.saibaMais:hover {
+    color: gold;
+    border: 1px solid gold;
+    transition: 0.5s;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 99; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    
+}
+.modalText {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.modalText h2 {
+    margin: 20px auto;
+    color: whitesmoke;
+}
+.modalText ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+}
+.modalText ul li {
+    justify-content: space-between;
+    display: flex;
+    gap: 1.8rem;
+}
+.modalSlide img {
+    width: 400px;
+}
+.modalContent {
+    background-color:  #1e252b;
+    box-shadow: #ffffff 10px 10px 20px;
+    margin: 15% auto; 
+    padding: 20px;
+    width: 100%; 
+    border-radius: 10px;
+    display: flex;
+}
+
+.modal button {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modalSlider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.modalSlides {
+    display: flex;
+    transition: transform 0.5s ease;   
+}
+.modalSlide {
+    flex: 1 0 100%;
+    text-align: center;
+    padding: 20px;
+}
+.modalSlide .active{
+    display: block;
+}
+.modalSlide img {
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: #ffffff 5px 5px 10px 7px;
+}
+.modalButtons {
+    margin: 15px;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.8rem;
+    border-radius: 1px;
+    
+}
+.modalButtons button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+      
+  }
+.slide {
+    
+    flex: 1 0 100%;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+.slide img {
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 0 150px #ffffff;
+}
+.buttons {
+    display: flex;
+    gap: 50px;
+    width: 50%;
+    margin: 0 auto;
+  
+}
+.buttons button {
+    width: 375px;
+    border-radius: 10px;
+    background-color: rgb(246, 248, 249);    
+    padding: 5px;    
+    cursor: pointer;    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.buttons button:hover {
+    border: 3px solid gold;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.location {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2;
+    gap: 1.8rem;
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    height: 400px;
+    gap: 1.8rem;
+    background-image:linear-gradient(to bottom, rgba(6, 18, 30, 0.1),  #1e252b), url(./assets/images/quero-otimizar-o-sistema-produtivo-na-construcao-civil-por-onde-comecar-750x514.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   
+}
+.contato ul {
+    list-style: none;
+    box-shadow: 5px 0 10px 15px #ffffff;
+    border-radius: 10px;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    
+
+}
+.contato li {
+    width: 70%;
+    padding: 7px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+}
+.contato li:hover {
+    color: #ffffff;
+    transform: scale(1.06);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 10px 0 10px #ffffff;
+    font-weight: 700;
+    transition: 0.1s;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    color: whitesmoke;
+    line-height: 2;
+    
+}
+.footer em {
+    cursor: pointer;
+    color: gold;
+    transition: 1s;
+}
+.btn-whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+.btn-whatsapp img {
+    max-width: 74px;
+    transition: 0.4s;
+    animation: zoomImage 2s infinite;
+}
+.btn-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+@media screen and (max-width: 430px) {
+    main {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    body {
+        width: 100%;
+        max-width: 430px;
+    }
+
+  
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menuHamburguer {
+        display: block;
+        z-index: 99;
+    }
+    
+    .menuFilho {
+        display: none;
+        width: 100%;
+        
+    }
+
+    .menuFilho.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:270px;
+        left: 0;
+        background-color: #1e252b;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 99;
+    }
+
+    .menuLista {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+        background-color: #1e252b;
+    }
+
+    .order {
+        z-index: 1;
+        font-size: 90%;
+        font-weight: 500;
+        gap: 1rem;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 430px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40%;
+        background-size: 100% 100%;
+        gap: 1.8rem;
+        
+    }
+
+    .hero img {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .hero button {
+        width: 60%;
+        max-width: 190px;
+    }
+
+    .hero p {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 15px;
+        width: 100%;
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .sobre p {
+        width: 100%;
+
+    }
+    
+    .sobre img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .services p {
+        padding: 30px;
+        text-align: justify;
+    }
+    .services p {
+        width: 100%;
+    }
+    .grid-service {
+        display: flex;
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+        max-width: 420px;
+        min-width: 320px;
+    }
+    .modalContent {
+        display: block;
+    }
+    .modalText  {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .modalSlide img {
+        width: 100%;
+    }
+    .modalButtons{
+        width: 100%;
+    }
+    .modalList {
+        width: 100%;
+    }
+    .coments {
+        width: 100%;
+        max-width: 430px;
+        display: flex;
+        gap: 1.8rem;    
+       }
+       .coments div img {
+        width: 50%;
+        margin-left: 10px;    
+       }
+       .coments li {
+        font-size: 20px; 
+        font-weight: 600;
+       }
+    .fotos {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+       }
+    .slides img{
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+    
+    }
+    .buttons {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .buttons button {
+        width: 40%;
+        margin: 10px auto;
+        
+    }
+    .location{
+        width: 100%;
+        max-width: 430px;
+        
+    }
+      
+    .contato {
+        width: 100%;
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        
+       }
+       .contato h1 {
+        font-size: 35px;        
+       }
+       .contato p {
+        font-size: 20px;
+       }
+       .contato ul {
+        width: 50%;        
+       }
+       .contato li{
+        width: 100%;
+        font-size: 18px;
+       }
+       
+       footer {
+        width: 100%;
+        max-width: 430px;
+        
+       }
+       .btn-whatsapp img {
+        max-width: 44px;
+        }
+}
