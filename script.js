@@ -30,10 +30,20 @@ function dev() {
     var click = window.document.querySelectorAll('dev')
     window.open("https://www.domlinksolucoesdigitais.com.br")
 }
+function call() {
+    window.location.href = 'tel:+5531988828183';
+}
+function sendEmail() {
+    window.location.href = 'mailto:wedsonreformaseconstrucoes@gmail.com';
+}
+function insta() {
+    var click = window.document.querySelectorAll('insta')
+}
 function localize() {
     var click = window.document.querySelectorAll('localize')
     window.open("https://www.google.com/maps/dir//Av.+Virg%C3%ADlio+de+Melo+Franco,+479+-+Santa+Amelia,+Belo+Horizonte+-+MG,+31555-120/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xa691b5297bfff3:0xc0e50836aebfc1d1?sa=X&ved=1t:707&ictx=111")
 }
+
 document.addEventListener("DOMContentLoaded", function() {
     const openModalButtons = document.querySelectorAll(".openModal");
     const modals = document.querySelectorAll(".modal");
