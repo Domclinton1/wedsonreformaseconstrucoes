@@ -166,3 +166,37 @@ function closeMenuOnScroll() {
 
 // Adiciona um event listener para escutar por rolagens na página
 window.addEventListener('scroll', closeMenuOnScroll);
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const slides = document.querySelector('#slides');
+        const slideArray = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('#prevBtn');
+        const nextBtn = document.querySelector('#nextBtn');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const offset = -index * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevBtn.addEventListener('click', function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slideArray.length - 1;
+            }
+            showSlide(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', function () {
+            if (currentIndex < slideArray.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            showSlide(currentIndex);
+        });
+
+        // Mostrar a primeira imagem inicialmente
+        showSlide(currentIndex);
+    });

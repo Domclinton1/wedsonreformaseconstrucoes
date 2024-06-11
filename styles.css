@@ -137,7 +137,7 @@ menuHamburguer {
 
 .logoHero img {
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
     animation: zoomImage 3s infinite;
 }
 
@@ -371,6 +371,51 @@ menuHamburguer {
     border-radius: 10px;
     width: 100%;
     height: 50px;
+}
+
+.coments{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background:  #000000;
+    color: #223248;
+    align-items: center;
+    
+    
+    
+}
+.coments ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 50%;
+    margin: 20px auto;
+    position: absolute;
+    flex: 1;
+    right: 20px;
+    overflow: hidden;
+}
+.coments li {
+    font-size: 35px;
+    font-weight: 500;
+    display: none;
+}
+.coments li:first-child {
+    display: block;
+}
+.coments div {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    display: inline-block;
+    flex: 1;
+}
+.coments img {
+    height: 400px;
+    display: block;
+    animation: zoomImage 3s infinite;
 }
 
 .fotos {
@@ -612,12 +657,10 @@ menuHamburguer {
         max-width: 190px;
     }
 
-    .hero p {
-        display: none;
-    }
+
 
     .hero h1 {
-        font-size: 15px;
+        font-size: 20px;
         width: 100%;
     }
     .sobre {
@@ -675,11 +718,12 @@ menuHamburguer {
        }
        .coments div img {
         width: 50%;
-        margin-left: 10px;    
+            
        }
        .coments li {
-        font-size: 20px; 
+        font-size: 18px; 
         font-weight: 600;
+        margin: 0 auto;
        }
     .fotos {
         width: 100%;
@@ -745,3 +789,440 @@ menuHamburguer {
         max-width: 44px;
         }
 }
+
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    main {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+    }
+
+    body {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+    }
+
+  
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menuHamburguer {
+        display: block;
+        z-index: 99;
+    }
+    
+    .menuFilho {
+        display: none;
+        width: 100%;
+        
+    }
+
+    .menuFilho.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:270px;
+        left: 0;
+        background-color: #1e252b;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 99;
+    }
+
+    .menuLista {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+        background-color: #1e252b;
+    }
+
+    .order {
+        z-index: 1;
+        font-size: 90%;
+        font-weight: 500;
+        gap: 1rem;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40%;
+        background-size: 100% 100%;
+        gap: 1.8rem;
+        
+    }
+
+    .hero img {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .hero button {
+        width: 60%;
+        max-width: 190px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+        width: 100%;
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .sobre p {
+        width: 100%;
+
+    }
+    
+    .sobre img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .services p {
+        padding: 30px;
+        text-align: justify;
+    }
+    .services p {
+        width: 100%;
+    }
+    .grid-service {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .service {
+        width: 100%;
+        max-width: 420px;
+        min-width: 320px;
+        flex: 1 1 200px;
+    }
+    .modalContent {
+        display: block;
+    }
+    .modalText  {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .modalSlide img {
+        width: 100%;
+    }
+    .modalButtons{
+        width: 100%;
+    }
+    .modalList {
+        width: 100%;
+    }
+    .coments {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+        display: flex;
+        gap: 1.8rem;    
+       }
+       .coments div img {
+        width: 50%;
+        margin-left: 10px;    
+       }
+       .coments li {
+        font-size: 20px; 
+        font-weight: 600;
+        width: 80%;
+        margin: 0 auto;
+       }
+    .fotos {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+        margin: 0 auto;
+       }
+    .slides img{
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+        margin: 0 auto;
+    
+    }
+    .buttons {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .buttons button {
+        width: 40%;
+        margin: 10px auto;
+        
+    }
+    .location{
+        width: 100%;
+        max-width: 768px;
+        
+    }
+    .location h1 {
+        margin-top: 30px;
+    }
+      
+    .contato {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        
+       }
+       .contato h1 {
+        font-size: 35px; 
+        margin-top: 30px;       
+       }
+       .contato p {
+        font-size: 20px;
+       }
+       .contato li{
+        width: 100%;
+        font-size: 18px;
+       }
+       
+       footer {
+        width: 100%;
+        min-width: 500px;
+        max-width: 768px;
+        
+       }
+       .btn-whatsapp img {
+        max-width: 44px;
+        }
+
+    }
+
+    @media screen and (min-width: 430px) and (max-width: 500px) {
+        main {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+        }
+    
+        body {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+        }
+    
+      
+        .menu-toggle {
+            display: flex;
+        }
+    
+        .menuHamburguer {
+            display: block;
+            z-index: 99;
+        }
+        
+        .menuFilho {
+            display: none;
+            width: 100%;
+            
+        }
+    
+        .menuFilho.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top:270px;
+            left: 0;
+            background-color: #1e252b;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 99;
+        }
+    
+        .menuLista {
+            flex-direction: column;
+            gap: 1rem;
+            margin: 0;
+            background-color: #1e252b;
+        }
+    
+        .order {
+            z-index: 1;
+            font-size: 90%;
+            font-weight: 500;
+            gap: 1rem;
+            width: 100%;
+            max-width: 350px;
+        }
+    
+        .hero {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 40%;
+            background-size: 100% 100%;
+            gap: 1.8rem;
+            
+        }
+    
+        .hero img {
+            width: 70%;
+            max-width: 350px;
+        }
+    
+        .hero button {
+            width: 60%;
+            max-width: 190px;
+        }
+    
+        .hero h1 {
+            font-size: 20px;
+            width: 100%;
+        }
+        .sobre {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+    
+        }
+        .sobre p {
+            width: 100%;
+    
+        }
+        
+        .sobre img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .services p {
+            padding: 30px;
+            text-align: justify;
+        }
+        .services p {
+            width: 100%;
+        }
+        .grid-service {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .service {
+            width: 100%;
+            max-width: 420px;
+            min-width: 320px;
+            flex: 1 1 200px;
+        }
+        .modalContent {
+            display: block;
+        }
+        .modalText  {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .modalSlide img {
+            width: 100%;
+        }
+        .modalButtons{
+            width: 100%;
+        }
+        .modalList {
+            width: 100%;
+        }
+        .coments {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            display: flex;
+            gap: 1.8rem;    
+           }
+           .coments div img {
+            width: 50%;
+            margin-left: 10px;    
+           }
+           .coments li {
+            font-size: 20px; 
+            font-weight: 600;
+           }
+        .fotos {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            margin: 0 auto;
+           }
+        .slides img{
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            margin: 0 auto;
+        
+        }
+        .buttons {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .buttons button {
+            width: 40%;
+            margin: 10px auto;
+            
+        }
+        .location{
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            
+        }
+        
+          
+        .contato {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+           }
+           .contato h1 {
+            font-size: 35px; 
+            margin-top: 30px;       
+           }
+           .contato p {
+            font-size: 20px;
+           }
+           .contato li{
+            width: 100%;
+            font-size: 18px;
+           }
+           
+           footer {
+            width: 100%;
+            min-width: 430px;
+            max-width: 500px;
+            
+           }
+           .btn-whatsapp img {
+            max-width: 44px;
+            }
+    
+        }
