@@ -19,12 +19,7 @@ body {
     margin-right: 20px;
     cursor: pointer;
 }
-menuHamburguer {
-    display: none;
-    font-size: 30px;
-    margin-right: 20px;
-    cursor: pointer;
-}
+
 
 .menuPai {
     display: flex;
@@ -111,6 +106,7 @@ menuHamburguer {
     justify-content: center;
     cursor: pointer; 
     animation: zoomImage 4s infinite;
+    z-index: 99;
 }
 
 .order:hover {

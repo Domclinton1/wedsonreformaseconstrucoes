@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://www.wedsonconstrucoes.com.br">
     <meta property="og:type" content="website">
     
-    <title>Wedson Reformas e Construções</title>
+    
     <link rel="icon" href="./assets/icons/logo-fav.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
+
+    <!-- Meta Tags SEO -->
+    <title>Serviços de Pedreiro, Construção e Reformas em BH | Qualidade e Confiança</title>
+    <meta name="description" content="Especializados em serviços de alvenaria (pedreiro), construção e reformas em BH. Oferecemos qualidade, agilidade e preços competitivos para transformar seu projeto em realidade.">
+    <meta name="keywords" content="pedreiro BH, construção BH, reformas em BH, serviços de pedreiro, reformas residenciais, reformas comerciais, construção civil, pedreiro de confiança, empresa de alvenaria">
+    <meta name="author" content="Wedson Reformas e Construções">
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta Tags para Redes Sociais -->
+    <meta property="og:title" content="Serviços de Pedreiro, Construção e Reformas em BH | Qualidade e Confiança">
+    <meta property="og:description" content="Oferecemos serviços completos de construção e reformas em Belo Horizonte. Transforme seu projeto com profissionais qualificados.">
+    <meta property="og:image" content="URL_da_imagem_de_destaque.jpg">
+    <meta property="og:url" content="https://wedsonconstrucoes.com.br">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607538396">
@@ -36,6 +51,26 @@
 
     gtag('config', 'AW-16607538396');
     </script>
+    <!-- Event snippet for Purchase conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16607538396/PYVxCPfGzbkZENzZi-89',
+            'value': 1.0,
+            'currency': 'BRL',
+            'transaction_id': '',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+    
 </head>
 <body>
     <header class="menuPai">
@@ -61,7 +96,7 @@
             <div class="logoHero" data-aos="zoom-in-up" data-aos-duration="2000">
                 <img src="./assets/icons/logo.png" alt="">
             </div>
-            <button class="order" onclick="order()"><i class="fa-brands fa-whatsapp "></i>Agendar Orçamento!</button>
+            <button class="order" id="order" onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" ><i class="fa-brands fa-whatsapp "></i>Agendar Orçamento!</button>
             <div class="heroText">
                 <h1 data-aos="fade-down" data-aos-duration="1000">Serviços de Reformas e Construções em Belo Horizonte - MG</h1>
                 <p data-aos="fade-up" data-aos-duration="1500"><strong>Construindo com Excelência, Reformando com Paixão!</strong></p>
@@ -134,7 +169,7 @@
                                     <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
                                     <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
                                 </div>
-                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
+                                <button onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
                             </div>
                             
                     </div>
@@ -176,7 +211,7 @@
                                     <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
                                     <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
                                 </div>
-                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
+                                <button onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
                         </div>
                     </div>
                 </div>
@@ -225,7 +260,7 @@
                                 <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
                                 <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
                             </div>
-                            <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
+                            <button onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button>
                         </div>
                     </div>
                 </div>
@@ -274,7 +309,7 @@
                                 <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
                                 <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
                             </div>
-                            <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button> 
+                            <button onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button> 
                         </div>
                     </div>
                 </div>
@@ -321,7 +356,7 @@
                                 <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
                                 <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
                             </div>
-                            <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button> 
+                            <button onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x" ></i>Agendar orçamento!</button> 
                         </div>
                     </div>
                 </div>
@@ -384,7 +419,7 @@
                                     <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
                                     <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
                                 </div>
-                                <button onclick="order()" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x"></i>Agendar orçamento!</button>
+                                <button onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" class="order "style="gap: 1.8rem;"><i class="fa-brands fa-whatsapp 2x"></i>Agendar orçamento!</button>
         
                         </div>
                     </div>
@@ -709,7 +744,7 @@
             <p>Entre em contato agora mesmo!</p>
             <ul>
                 <li onclick="sendEmail()"><i class="fa fa-envelope"></i>Email</li>
-                <li onclick="order()" ><i class="fa-brands fa-whatsapp"></i>WhatsApp</li>
+                <li onclick="return gtag_report_conversion('http://wedsonconstrucoes.com.br')" id="order" ><i class="fa-brands fa-whatsapp"></i>WhatsApp</li>
                 <li onclick="call()"><i class="fa fa-phone"></i>Telefone</li>
                 <li onclick="insta()"><i class="fa-brands fa-instagram"></i>Instagram</li>
             </ul>
