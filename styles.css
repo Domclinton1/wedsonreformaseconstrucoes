@@ -209,12 +209,13 @@ body {
 
 .service {
     width: 300px;
+    height:290px;
     background-color: #1e252b;
     border-radius: 10px;
     box-shadow: 10px 0 18px  #ffffff;
 }
 .service h2 {
-    font-size: 20px;
+    font-size: 19px;
     color: #fff;
 }
 .grid-service {
@@ -435,6 +436,91 @@ body {
     animation: zoomImage 3s infinite;
 }
 
+#testimonials {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    background-color: #ffffff;
+    color: #06121e;
+
+}
+.section-title {
+    text-align: center;
+}
+#testimonials .section-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+}
+#testimonials_content {
+    width: 100%;   
+    display: flex; 
+}
+
+#feedback {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+    color: #ffffff;
+    background-color: #1d1d1d;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-content p {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.feedback-content p span {
+    color: #e9a209;
+}
+
+.feedback-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.button-rate {
+    padding: 14px 28px;
+    color: #ffffff;
+    background-color: #1d1d1d;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;   
+    cursor: pointer; 
+}
+.fa-star {
+    color: #e9a209;
+}
+.rate {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 450px) {
+    .feedback {
+        display: flex;
+        flex-direction: column;
+    }
+    .feedback-content p:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .fotos {
     display: flex;
     flex-direction: column;
@@ -514,12 +600,12 @@ body {
     align-items: center;
     text-align: center;
     color: whitesmoke;
-    height: 400px;
     gap: 1.8rem;
     background-image:linear-gradient(to bottom, rgba(6, 18, 30, 0.1),  #fff), url(./assets/images/quero-otimizar-o-sistema-produtivo-na-construcao-civil-por-onde-comecar-750x514.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 .contato ul {
     list-style: none;

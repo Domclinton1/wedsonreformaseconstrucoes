@@ -43,6 +43,10 @@ function localize() {
     var click = window.document.querySelectorAll('localize')
     window.open("https://www.google.com/maps/dir//Av.+Virg%C3%ADlio+de+Melo+Franco,+479+-+Santa+Amelia,+Belo+Horizonte+-+MG,+31555-120/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xa691b5297bfff3:0xc0e50836aebfc1d1?sa=X&ved=1t:707&ictx=111")
 }
+function stars(){
+    var click = window.document.querySelectorAll(".button-rate")
+    window.open("https://g.co/kgs/UdX2E4W")
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     const openModalButtons = document.querySelectorAll(".openModal");
@@ -121,20 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    var slides = document.querySelectorAll('.coments li');
-    var currentSlide = 0;
-    
-    function nextSlide() {
-      slides[currentSlide].style.display = 'none'; // Oculta o slide atual
-      currentSlide = (currentSlide + 1) % slides.length; // Atualiza o índice do próximo slide
-      slides[currentSlide].style.display = 'block'; // Exibe o próximo slide
-    }
-    
-    setInterval(nextSlide, 5000); // Altere o intervalo de troca de slide conforme necessário
-  });
-
 
   function toggleMenu() {
     const menu = document.querySelector('.menuFilho');
