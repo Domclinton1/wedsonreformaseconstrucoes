@@ -38,6 +38,7 @@ function sendEmail() {
 }
 function insta() {
     var click = window.document.querySelectorAll('insta')
+    window.open("https://instagram.com/wedsonconstrucoes")
 }
 function localize() {
     var click = window.document.querySelectorAll('localize')
